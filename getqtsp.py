@@ -20,7 +20,7 @@ def main() :
     logs = "/root/yangql/mysqlqps_tps.xls"
  
     try: 
-    conn = MySQLdb.connect(host=dbconn.DB_HOST,port=int(dbconn.DB_PORT),user=dbconn.DB_USER,passwd=dbconn.DB_PASS, charset='utf8')
+      conn = MySQLdb.connect(host=dbconn.DB_HOST,port=int(dbconn.DB_PORT),user=dbconn.DB_USER,passwd=dbconn.DB_PASS, charset='utf8')
     except  MySQLdb.ERROR,e:
       print "Error %d:%s"%(e.args[0],e.args[1])
       exit(1)
